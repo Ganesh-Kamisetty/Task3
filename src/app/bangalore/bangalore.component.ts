@@ -1,12 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-bangalore',
+  templateUrl: './bangalore.component.html',
+  styleUrls: ['./bangalore.component.css']
 })
-export class AppComponent {
-  title = 'task3';
+export class BangaloreComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
   users= [
     {'Id':1,'Name':'Krish','location':'hyderabad'},
     {'Id':2,'Name':'Laxman','location':'bangalore'},
@@ -16,4 +21,3 @@ export class AppComponent {
     {'Id':6,'Name':'Suresh','location':'bangalore'}
   ]
 }
-

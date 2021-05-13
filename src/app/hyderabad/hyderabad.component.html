@@ -1,0 +1,17 @@
+<h1>Hyderabad Users</h1>
+<table>
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Location</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let user of users">
+        <tr *ngIf="user.location == 'hyderabad'">
+            <th scope="row">{{user.Id}}</th>
+            <td>{{user.Name}}</td>
+            <td>{{user.location}}</td>
+        </tr>
+    </tbody>
+</table>
